@@ -257,3 +257,20 @@ header.top .btn{white-space:nowrap}
   .offer>div+div{border-left:0;border-top:1px solid var(--line)}
   .offer>div{padding:28px 22px}
 }
+
+/* Formulaire de contact */
+.cform{display:grid;gap:16px;max-width:640px;margin:28px 0 8px}
+.cform .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cform label{display:grid;gap:6px;font-size:.92rem}
+.cform input,.cform select,.cform textarea{font:inherit;color:inherit;background:transparent;border:1.5px solid currentColor;border-radius:10px;padding:12px 14px;opacity:.95;width:100%}
+.cform select option{color:#14130f}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:2px solid var(--a);outline-offset:2px}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .btn{cursor:pointer;font:inherit}
+.fstatus{min-height:1.4em;font-size:.95rem;margin:0}
+@media (max-width:600px){.cform .frow{grid-template-columns:1fr}}
+
+/* Portrait (à propos) */
+.about .portrait{display:block;width:min(360px,100%);height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:18px;margin-top:28px}
+.about .mark{width:min(150px,40%);margin-top:28px}
+@media (max-width:900px){.about .portrait{width:min(300px,100%)}}
