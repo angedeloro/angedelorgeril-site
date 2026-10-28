@@ -274,3 +274,14 @@ header.top .btn{white-space:nowrap}
 .about .portrait{display:block;width:min(360px,100%);height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:18px;margin-top:28px}
 .about .mark{width:min(150px,40%);margin-top:28px}
 @media (max-width:900px){.about .portrait{width:min(300px,100%)}}
+
+/* Agenda Cal.com intégré */
+.calbox{margin-top:56px;max-width:760px;scroll-margin-top:96px}
+.calbox h3{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:500;letter-spacing:-.02em;margin-bottom:8px}
+.calbox p{color:#d8d2c4;margin-bottom:18px}
+.calbox iframe{display:block;width:100%;height:720px;border:0;border-radius:14px;background:#fff}
+.calbox .calalt{margin:14px 0 0;font-size:.9rem}
+.calbox .calalt a{color:var(--paper);text-decoration:underline}
+html[data-theme="dark"] .calbox p{color:inherit}
+html[data-theme="dark"] .calbox .calalt a{color:var(--ink)}
+@media (max-width:600px){.calbox iframe{height:780px}}
